@@ -1,0 +1,37 @@
+button{
+    border: 0;
+    color: white;
+    background: linear-gradient(225deg, #fc5902 0%, #f8bd1b 50%, #c625d0 100%);;
+    position: relative;
+    left: 1130px;
+    overflow: hidden;
+    padding: 5px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.8em;
+    box-shadow: 0px -0px 0px 0px rgba(143,
+    64, 248, .5), 0px 0px 0px 0px  rgba(39,
+    200, 255, .5);
+    transition: all .2s;
+}
+
+button::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(225deg, #fc5902 0%, #f8bd1b 50%, #c625d0 100%);
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+    transition: all .2s;
+}
+button:hover::after{
+    transform: rotate(150deg);
+}
+button:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143,
+    64, 248, .25), -10px 10px 25px 0px
+    rgba(39, 200, 255, .25);
+}
